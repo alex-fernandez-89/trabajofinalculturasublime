@@ -1,0 +1,361 @@
+@media (min-width: 992px) and (max-width: 2500px){
+    
+    
+    body{
+        background-color: rgb(0, 0, 0);
+        max-width: 100%;
+        
+    }
+    /*navbar*/
+
+    .navbar{
+        background-color: rgb(0, 0, 0);
+        max-width: 100%;
+    }
+
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-fluid .logo img{
+        width: 13vw;
+        height: 18vh;
+    }
+
+    .container-fluid button{
+        color: transparent;
+        background-color: white;
+    }
+    .navbar-nav{
+        width: 60%;
+    }
+    .collapse{
+        justify-content:flex-end;
+        margin-inline-end: 1%;
+        
+    }
+    
+    .navbar-nav .nav-linka{
+        text-decoration: none;
+        color: red;
+        font-size: 1.6em;
+        margin-right: 4%;
+        
+    }
+    .navbar-nav .nav-linkb{
+        text-decoration: none;
+        color: rgb(60, 196, 249);
+        font-size: 1.6em;
+        margin-right: 4%;
+    }
+    .navbar-nav .nav-linkc{
+        text-decoration: none;
+        color: rgb(215, 232, 101);
+        font-size: 1.6em;
+        margin-right: 4%;
+    }
+    .navbar-nav .nav-linkd{
+        text-decoration: none;
+        color: rgb(0, 255, 34);
+        font-size: 1.6em;
+        margin-right: 4%;
+    }
+    .navbar-nav .nav-linke{
+        text-decoration: none;
+        color: rgb(234, 0, 255);
+        font-size: 1.6em;
+        margin-right: 4%;
+    }
+    /*Hover links*/
+    .navbar-nav .nav-linka:hover{
+        border-bottom: 1px solid rgb(0, 255, 0);
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        
+        
+    }
+    .navbar-nav .nav-linkb:hover{
+        border-bottom: 1px solid rgb(0, 255, 34);
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        
+    }
+    .navbar-nav .nav-linkc:hover{
+        border-bottom: 1px solid rgb(0, 255, 34);
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        
+    }
+    .navbar-nav .nav-linkd:hover{
+        border-bottom: 1px solid rgb(0, 255, 34);
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        
+    }
+    .navbar-nav .nav-linke:hover{
+        border-bottom: 1px solid rgb(0, 255, 34);
+        text-decoration: none;
+        color: white;
+        font-size: 1.7em;
+        
+    }
+
+    /*.navbar-nav .nav-link{
+        color: blueviolet;
+
+    }
+    .navbar-nav .nav-link:hover{
+        color: red;
+    }*/
+
+    /*Section*/
+    section{
+        width: 100%;
+    }
+
+    /*-----carousel-----*/
+
+    .carousel-inner{
+        width: 100%;
+        height: 50%;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 10%;
+    }
+
+
+    .informacion{
+        width: 100%;
+    }
+    .informacion h1{
+        font-family: 'roboto', sans-serif;
+        font-size: 4em;
+        text-align: center;
+        text-decoration:underline 3px ;
+        color: rgb(205, 63, 63);
+    }
+    .informacion p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.3em;
+        text-align: center;
+        margin: 1%;
+        color: rgb(255, 157, 0);
+    }
+
+
+    /*<------Cards----->*/
+
+    .contenedorcards h1{
+        font-family: 'roboto', Times, serif;
+        font-size: 4em;
+        text-align: center;
+        text-decoration:underline 1px ;
+        color: rgb(205, 63, 63);
+    }
+
+
+    .card{
+        box-sizing: border-box;
+        margin: 2%;
+        border: 3px solid rgba(137, 205, 232);
+        background-color: rgb(140, 30, 140);
+        color: rgb(255, 255, 255);
+    }
+
+
+
+    /*<----Aside----->*/
+
+    aside{
+     width: 100%;
+        
+    }
+    
+    aside h1{
+        font-family: 'Roboto', Times, serif;
+        font-size: 4em;
+        text-align: center;
+        text-decoration:underline 1px ;
+        color: rgb(205, 63, 63);
+    }
+
+   
+    
+    .gallery{
+        width: 90%;
+        
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-bottom: 0%;
+        display:grid;
+        grid-template-columns: repeat(5, 240px);
+        grid-template-rows: repeat(2, 185px);
+    }
+    .gallery .img-card{
+       
+        margin-left: 15%;
+      
+    }
+    .gallery .img-card img{
+        box-sizing: border-box;
+        width: 15vw;
+        height: 25vh;
+        
+        margin-top: 30px;
+        margin-right: 0%;
+        transition: 0.5s;
+        cursor: pointer;
+        border: white solid 3px;
+        border-radius: 10px;
+    }
+    .gallery .img-card img:hover{
+       
+        transform: scale(1) rotate(-360deg);
+        border: white solid 3px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    /** MODAL **/
+    
+    .modal{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding-top: 30px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    /*.modal .list{
+        width: 95%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100px);
+    }
+    .modal .list img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+    }*/
+    .modal #mymodal{
+        width: 80vw;
+        display: block;
+        margin: auto;
+        height: 90vh;
+    }
+    .modal .caption-text{
+        width: 80%;
+        display: block;
+        margin: auto;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        padding: 10px 0px;
+    }
+    .close{
+        position: absolute;
+        top:15px;
+        right: 35px;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    
+
+/*<-----Footer---->*/
+    footer{
+        width: 100%;
+    }
+    footer h1{
+        font-family: 'roboto', Times, serif;
+        font-size: 4em;
+        text-align: center;
+        text-decoration:underline 1px ;
+        color: rgb(205, 63, 63);
+    }
+
+    video{
+        background-color: black;
+        width: 49vw;
+        height: 40vh;
+    }
+    .mapa{
+        width: 49vw;
+        height: 40vh;
+    }
+    .direccion{
+        width: 98%;
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+        flex-direction: column;
+        /*border: black solid 3px;
+        background-color: rgb(243, 0, 0);*/
+        
+    }
+    .direccion p{
+        text-align: center;
+        color: black;
+        font-size: 1.6rem;
+    }
+
+    
+    .socialmedia{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .socialmedia img{
+        
+        margin: 5px;
+        width: 8vw;
+        height: 10vh;
+        background-color: white;
+        border-radius: 50%;
+        border: black solid 2px;
+        
+    }
+    .container-boton{
+        background-color: #64ed64af;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 15px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+    
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    
+    .boton{
+        width: 4vw;
+        transition: ease 1s;
+    }
+
+
+
+
+
+
+
+}
